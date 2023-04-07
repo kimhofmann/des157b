@@ -18,7 +18,7 @@
             for (const section of sections) {
                 section.className = 'switch';
             }
-            image.src = "images/lightmode.png"
+            image.src = "images/lightmode.svg"
         
             mode = 'light';
         } else {
@@ -28,7 +28,7 @@
             for (const section of sections) {
                 section.removeAttribute('class');
             }
-            image.src = "images/darkmode.png"
+            image.src = "images/darkmode.svg"
             button.innerHTML = 'wake up'
             mode = 'dark'
         }
