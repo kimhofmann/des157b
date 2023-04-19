@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <title>blockbuster video</title>
+</head>
+<body>
+        <video id="myVideo" loop autoplay muted playsinline>
+
+        <source src="media/timelapse.webm"type=video/webm">
+        <source src="media/timelapse.mp4" type="video/mp4">
+
+        <p>
+            Your browser doesn't support HTML5 video.
+            Here is a <a href="media/timelapse.mp4">link to the video</a> instead.
+        </p>
+
+    </video>
+
+    
+    <div id="text">
+        <p id="one" class="hidden">the night</p>
+        <p id="two" class="hidden">comes</p>
+        <p id="three" class="hidden">down</p>
+        <p id="four" class="hidden">like heaven.</p>
+    </div>
+
+    <i class="fas fa-expand"></i>
+
+
+    <div id="preloader" class="showing">
+        <p>worship.</p>
+    </div>
+
+
+</body>
+</html>
