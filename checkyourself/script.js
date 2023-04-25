@@ -1,0 +1,43 @@
+(function() {
+    'use strict'
+    console.log('reading js')
+
+    const end1 = document.querySelector('#end1');
+    const end2 = document.querySelector('#end2');
+    const end3 = document.querySelector('#end3');
+    const end4 = document.querySelector('#end4');
+    const end5 = document.querySelector('#end5');
+    const end6 = document.querySelector('#end6');
+    const totalScore = document.querySelector('#total');
+    const targetFace = document.querySelector('#target')
+
+    end1.addEventListener('click', function(){
+        targetFace.src = "images/end1.svg"
+    });
+
+    end2.addEventListener('click', function(){
+        targetFace.src = "images/end2.svg"
+    });
+
+    end3.addEventListener('click', function(){
+        targetFace.src = "images/end3.svg"
+    });
+
+    end4.addEventListener('click', function(){
+        targetFace.src = "images/end4.svg"
+    });
+
+    end5.addEventListener('click', function(){
+        targetFace.src = "images/end5.svg"
+    });
+
+    end6.addEventListener('click', function(){
+        targetFace.src = "images/end6.svg"
+    });
+
+    totalScore.addEventListener('click', function(){
+        targetFace.src = "images/total.svg"
+    });
+
+
+})();
