@@ -1,3 +1,4 @@
+
 (function() {
     'use strict'
     console.log('reading js')
@@ -10,9 +11,23 @@
     const end6 = document.querySelector('#end6');
     const totalScore = document.querySelector('#total');
     const targetFace = document.querySelector('#target')
+    const scoreDiv = document.querySelector('#scores')
+    const dataP = document.querySelector('#data')
+
+    let globalData;
+    async function getData(){
+        const jsonScores = await fetch('data/scores.json');
+        const data = await jsonScores.json();
+        console.log(data);
+        globalData = data;
+    }
+
+    getData();
+
 
     end1.addEventListener('click', function(){
         targetFace.src = "images/end1.svg"
+        scores.innerhtml = '<p>test</p>'     
     });
 
     end2.addEventListener('click', function(){
