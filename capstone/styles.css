@@ -11,6 +11,17 @@ h1 {
     margin: 1em auto;
 }
 
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding: 0;
+    color: white;
+    position: relative;
+    width: 900px;
+    margin: 10px auto; 
+}
+
 body {
     background-color: #555352;
 
@@ -21,6 +32,12 @@ body {
     position: relative;
     width: 900px;
     margin: 1em auto;
+}
+
+#proposal {
+    position: relative;
+    width: 900px;
+    margin: 1em auto; 
 }
 
 
