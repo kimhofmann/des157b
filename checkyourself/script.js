@@ -24,10 +24,11 @@
 
     getData();
 
+    /* im trying to get that json data to appear in the div for each button click but im not sure how to do that */
 
     end1.addEventListener('click', function(){
         targetFace.src = "images/end1.svg"
-        scores.innerhtml = '<p>test</p>'     
+        scores.innerhtml = 'please'     
     });
 
     end2.addEventListener('click', function(){
