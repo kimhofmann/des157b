@@ -38,6 +38,10 @@ body {
     position: relative;
     width: 900px;
     margin: 1em auto; 
+    color: white;
+    font-family: 'Overpass Mono', monospace;
+    line-height: 2em;
+    
 }
 
 
