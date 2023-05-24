@@ -1,0 +1,72 @@
+body {
+    margin: auto;
+    width: 100%;
+}
+
+#leftpeople {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+#rightpeople {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 1300px;  
+}
+
+#leftpeople img {
+    padding: 20px;
+}
+
+#rightpeople img {
+    padding: 20px;
+}
+
+main {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar a {
+    padding: 30px;
+}
+
+.bottombar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottombar a {
+    padding: 30px;
+}
+
+.questioncontainer {
+    margin: auto;
+    width: 50%;
+    border: solid 5px hotpink;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.ques {
+
+    font-size: 40px;
+}
+
+.yesno {
+    display: flex;
+    justify-content: space-between;
+}
