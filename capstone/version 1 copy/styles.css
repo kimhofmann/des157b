@@ -1,0 +1,89 @@
+
+#background {
+    z-index: -100;
+    margin: auto;
+}
+
+#leftpeople {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    
+
+}
+
+#rightpeople {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+    z-index: 1;
+}
+
+#leftpeople img {
+    padding: 20px;
+}
+
+#rightpeople img {
+    padding: 20px;
+}
+
+main {
+    position: absolute;
+    top: 12%;
+    left: 27%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    z-index: 3;
+}
+
+/***** nav positioning *****/
+
+nav #navlink {
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+nav #sublink {
+    position: absolute;
+    top: 20px;
+    left: 1375px;
+}
+
+nav #queslink {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+}
+
+nav #unlink {
+    position: absolute;
+    bottom: 15px;
+    left: 1375px;
+}
+
+.questioncontainer {
+    margin: auto;
+    width: 50%;
+    background-color: beige;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    z-index: 10;
+
+}
+
+.ques {
+    font-size: 40px;
+}
+
+.yesno {
+    display: flex;
+    justify-content: space-between;
+}
