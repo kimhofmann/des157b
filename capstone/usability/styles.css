@@ -1,0 +1,209 @@
+body {
+    margin: auto;
+    width: 1400px;
+    height: 800px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: grey;
+
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fade {
+    animation: fadeOut ease 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;} 
+} 
+
+main {
+    position: relative;
+    top:0;
+    right:0;
+    width: 1400px;
+    height: 800px;
+
+}
+
+#bg {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -20;
+}
+
+/****** animation station *****/
+
+#people-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, 0);
+    width: 800px;
+    height: 600px;
+    z-index: -10;
+}
+
+
+#leftpeople {
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#rightpeople {
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+
+
+#movingright1 {
+    position: absolute;
+    top: -60px;
+    left: -15px;
+
+}
+
+#staticright1 {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+#movingleft1 {
+    position: absolute;
+    top: 30px;
+    left: -15px;
+}
+
+#staticleft1 {
+    position: absolute;
+    top:250px;
+    left: 600px;
+}
+
+
+
+/***** navigation junction ****/
+
+
+nav {
+    position: relative;
+}
+
+nav a {
+    padding: 7px;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 5px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav a:visited {
+    color:black;
+}
+
+nav a:hover {
+    font-weight: 600;
+}
+
+#topbar {
+    position: relative;
+}
+
+#bottombar {
+    position: relative;
+}
+
+#about {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+
+#submit {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+#questions {
+    position: absolute;
+    left: 50px;
+    top: 700px;
+
+}
+
+#link {
+    position: absolute;
+    right:50px;
+    top: 700px;
+
+}
+
+
+
+/*** question stuff ***/
+
+
+
+#questioncontainer {
+    position: absolute;
+    top: 275px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 35%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.ques {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+button {
+    font-family: 'M PLUS Rounded 1c', sans-serif;;
+    text-decoration: none;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+#yes {
+    background-color: greenyellow;
+}
+
+#no {
+    background-color: red;
+}
+
+.yesno {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
