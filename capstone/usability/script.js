@@ -11,6 +11,7 @@
   
 
   const answerYes = document.querySelector('#yes');
+  const aboutButton = document.querySelector('#about')
 
   answerYes.addEventListener('click', function(){
 
@@ -18,7 +19,7 @@
     document.getElementById('staticright1').className = "hidden"
     document.getElementById('movingleft1').className = "show"
     document.getElementById('staticleft1').className = "hidden"
-    document.getElementById ('questioncontainer').className = "fade"
+    document.getElementById ('questioncontainer').className = "fadeOut"
 
     var tl = anime.timeline({
       easing: 'easeOutInSine',
@@ -37,19 +38,9 @@
       translateY: pathLeft('y'),
     }, '-=3000') // relative offset
   })
-  
-  // Add children
-  tl
-  .add({
-    targets: '.movingright',
-    translateX: path('x'),
-    translateY: path('y'),
-    delay: anime.stagger(400)
-  })
-  .add({
-    targets: '.movingleft',
-    translateX: -1200,
-    delay: anime.stagger(400)
-  }, '-=3500') // relative offset
+
+
+
+
 
 })()
