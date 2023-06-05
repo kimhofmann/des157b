@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--PARSE-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/3.4.0/parse.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+
+
+
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<main>
+
+    <div id="bg">
+
+        <img src="images/bgcolor.svg" width="1400" height="800">
+
+    </div>
+
+
+
+
+    <nav>
+        <div id="topbar">
+            <button id="about">about the seal</button>
+            <button id="submit">submit a question</button>
+        </div>
+
+        <div id="bottombar">
+            <button id="questions"> question list </button>
+            <button id="aboutUs"> who we are </button>
+        </div>
+    </nav>
+
+
+    <div id="people-wrapper">
+
+
+        <svg width="800" height="600">
+            <path id="demo-svg-right" fill="none" d="M 150 300 Q 200 200 250 300 Q 300 200 350 300 Q 400 200 450 300 Q 500 200 550 300 Q 600 200 650 300  ">
+            </path>
+            <path id="demo-svg-left"  fill="none" d="M 650 300 Q 600 200 550 300 Q 500 200 450 300 Q 400 200 350 300 Q 300 200 250 300 Q 200 200 150 300 ">
+            </path>
+        </svg>
+    
+        </svg>
+
+        <div id="leftpeople">
+            <img id="movingright1" class="hidden" src="images/red.svg" height="80px" width="80px">
+            <img id="staticright1" class= "show" src="images/red.svg" height="80px" width="80px">
+            <img id="movingright2" class="hidden" src="images/red.svg" height="80px" width="80px">
+            <img id="staticright2" class= "show" src="images/red.svg" height="80px" width="80px">
+            <img id="movingright3" class="hidden" src="images/red.svg" height="80px" width="80px">
+            <img id="staticright3" class= "show" src="images/red.svg" height="80px" width="80px">
+            <img id="movingright4" class="hidden" src="images/red.svg" height="80px" width="80px">
+            <img id="staticright4" class= "show" src="images/red.svg" height="80px" width="80px">
+            <img id="movingright5" class="hidden" src="images/red.svg" height="80px" width="80px">
+            <img id="staticright5" class= "hidden" src="images/red.svg" height="80px" width="80px">
+
+        </div>
+
+
+        
+
+        <div id="rightpeople">
+            <img id="movingleft1" class="hidden" src="images/blue.svg" height="80px" width="80px">
+            <img id="staticleft1" class= "" src="images/blue.svg" height="80px" width="80px">
+            <img id="movingleft2" class="hidden" src="images/blue.svg" height="80px" width="80px">
+            <img id="staticleft2" class= "" src="images/blue.svg" height="80px" width="80px">
+            <img id="movingleft3" class="hidden" src="images/blue.svg" height="80px" width="80px">
+            <img id="staticleft3" class= "" src="images/blue.svg" height="80px" width="80px">
+            <img id="movingleft4" class="hidden" src="images/blue.svg" height="80px" width="80px">
+            <img id="staticleft4" class= "" src="images/blue.svg" height="80px" width="80px">
+            <img id="movingleft5" class="hidden" src="images/blue.svg" height="80px" width="80px">
+            <img id="staticleft5" class= "" src="images/blue.svg" height="80px" width="80px">
+        </div>
+     </div>
+
+
+
+    <div id="questioncontainer" class="invisible"> 
+        
+        <h1 id="questionText">click yes</h1>
+
+        <div class="yesno">
+
+        <button id="yesButton"> yes </button>
+        <button id="noButton"> no </button>
+
+        </div>
+    
+    </div>
+
+
+    <div id="aboutbox" class="overlay hidden">
+
+        <h1> title </h1>
+
+        <p> Step into the captivating world of the Davis Centennial Seal, where the rich tapestry of our community's story comes alive! Discover the strength of the oak tree, the knowledge within the open book, and the spirit of adventure represented by the bicyclist. Let the seal inspire you to explore our history, embrace learning, and shape a future filled with promise. As you delve into the significance of the Davis Centennial Seal, remember that you play an essential role in the continued growth and vibrancy of our community. Together, let's unlock our potential and create a tomorrow we can all be proud of! </p>
+
+
+        <button href="#"> learn more about the seal</button>
+        <button class="close"> close </button>
+
+    </div>
+
+    <div id="questionbox" class="overlay hidden">
+        <h1> title </h1>
+
+        <p> list of questions</p>
+
+        <button class="close"> close </button>
+    </div>
+
+    <div id="submitbox" class="overlay hidden">
+        <form id="submissionForm">
+        <h1> Submit a question here:</h1>
+        <input type="text" id="submission" name="submission" required>
+        <button type="submit">Submit</button>  
+        </form>
+    </div>
+
+    <div id="aboutusbox" class="overlay hidden">
+        <h1> title </h1>
+
+        <p> blah blah stuff about jenni and kim blah blah </p>
+
+        <button class="close"> close </button>
+    </div>
+
+
+    <div id="landingpagebox" class="">
+        <h1> landing box </h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic iste maxime obcaecati vero exercitationem animi nihil perferendis aspernatur quae ducimus voluptatibus veniam, fuga sed! Nihil modi quaerat atque cumque deleniti.</p>
+        <button id="startbutton"> start </button>
+    </div>
+
+    <div id="displayanswerbox" class="hidden">
+        <h1 id="answerText"> answer page.</h1>
+        <button id="anotherQuestion"> answer another question </button>
+    </div>
+
+
+</main>
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
