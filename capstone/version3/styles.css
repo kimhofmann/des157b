@@ -398,12 +398,12 @@ button {
     font-weight: 800;
 }
 
-#yes {
-    background-color: greenyellow;
+#yesButton {
+    background-color: #669933;
 }
 
-#no {
-    background-color: red;
+#noButton {
+    background-color: #ea645f;
 }
 
 .yesno {
