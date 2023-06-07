@@ -1,0 +1,604 @@
+body {
+    margin: auto;
+    width: 1400px;
+    height: 800px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: grey;
+
+}
+
+.invisible {
+    opacity: 0
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fadeOut {
+    animation: fadeOut ease 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;
+    visibility: hidden;
+    } 
+} 
+
+.fadeIn {
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;
+    visibility: visible;}
+}
+
+main {
+    position: relative;
+    top:0;
+    right:0;
+    width: 1400px;
+    height: 800px;
+
+}
+
+#bg {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -20;
+}
+
+/****** animation station *****/
+
+#people-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, 0);
+    width: 800px;
+    height: 600px;
+    z-index: -10;
+}
+
+
+#leftpeople {
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#rightpeople {
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+
+
+/***** to the right ****/
+
+#movingright1 {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -2;
+
+}
+
+#staticright1 {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    z-index: -2;
+}
+
+#movingright2 {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    z-index: -1;
+}
+
+#staticright2 {
+    position: absolute;
+    top: 300px;
+    left: 120px;    
+    z-index: -1;
+}
+
+#movingright3 {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    z-index: -3;
+}
+
+#staticright3 {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    z-index: -3;
+}
+
+#movingright4 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+
+}
+
+#staticright4 {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+
+}
+
+#movingright5 {
+    position: absolute;
+    top: -50px;
+    left: 25px;
+    z-index: -2;
+
+}
+
+#staticright5 {
+    position: absolute;
+    top: 250px;
+    left: 175px;
+    z-index: -2;
+
+}
+
+
+/**** to the left *****/
+
+#movingleft1 {
+    position: absolute;
+    top: 12px;
+    left: -50px;
+    z-index: -1;
+}
+
+#staticleft1 {
+    position: absolute;
+    top:310px;
+    left: 600px;
+    z-index: -1;
+}
+
+#movingleft2 {
+    position: absolute;
+    top: -50px;
+    left: -85px;
+    z-index: -3;
+}
+
+#staticleft2 {
+    position: absolute;
+    top:250px;
+    left: 565px;
+    z-index: -1;
+}
+
+#movingleft3 {
+    position: absolute;
+    top: -80px;
+    left: -40px;
+    z-index: -3;
+}
+
+#staticleft3 {
+    position: absolute;
+    top:220px;
+    left: 610px;
+    z-index: -2;
+}
+
+#movingleft4 {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    z-index: -3;
+}
+
+#staticleft4 {
+    position: absolute;
+    top:260px;
+    left: 650px;
+    z-index: -1;
+}
+
+#movingleft5 {
+    position: absolute;
+    top: 35px;
+    left: -90px;
+    z-index: 1;
+}
+
+#staticleft5 {
+    position: absolute;
+    top:335px;
+    left: 560px;
+
+}
+
+/**** take it back now yall *****/
+/**** one hop this time *****/
+
+
+
+
+/***** navigation junction ****/
+
+
+nav {
+    position: relative;
+}
+
+
+
+#topbar {
+    position: relative;
+}
+
+#bottombar {
+    position: relative;
+}
+
+#about {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+
+#submit {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+#questions {
+    position: absolute;
+    left: 50px;
+    top: 700px;
+
+}
+
+#aboutUs {
+    position: absolute;
+    right:50px;
+    top: 700px;
+
+}
+
+
+
+/*** question stuff ***/
+
+
+
+#questioncontainer {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: solid 4px black;
+    border-radius: 10px;
+    z-index: 1000;
+
+}
+
+#questioncontainer h1 {
+    padding: 30px;
+}
+
+
+#aboutbox {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+
+#aboutbox p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#aboutbox button {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#questionbox {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 45%;
+    height: 600px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+
+#questionbox button {
+    margin-top: 30px;
+}
+
+.overlay-content {
+    height: 450px;
+    overflow-y:auto;
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #303030;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #303030
+  }
+
+#submitbox {
+    position: absolute;
+    top: 225px;
+    left: 50%;
+    transform: translate(-50%, 0); 
+    width: 45%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    border: solid 4px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+
+#aboutusbox {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 45%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+
+#aboutusbox p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#aboutusbox button {
+    margin-bottom: 10px;
+}
+
+#landingpagebox {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 45%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+
+#displayanswerbox {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 45%;
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    z-index: 1000;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+
+#answerText {
+    font-size: 35px;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+#answerTextPercent {
+    font-weight: 700;
+}
+
+.ques {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+button {
+    font-family: 'M PLUS Rounded 1c', sans-serif;;
+    text-decoration: none;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+#yesButton {
+    background-color: #699b35;
+    margin-left: 20px;
+}
+
+#noButton {
+    background-color: #ea645f;
+    margin-right: 20px;
+}
+
+.yesno {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+
+.questionListText {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.questionListYes {
+    font-weight: 600;
+    color: #699b35;
+    font-size: 25px;
+}
+
+.questionListNo {
+    font-weight: 600;
+    color: #ea645f;
+    font-size: 25px;
+}
+
+.questionListPercent {
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#percentagesFlex {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+
+#staticpoleleft {
+    position: absolute;
+    top: 150px;
+    left: 120px;
+    z-index: 50;
+
+}
+
+#staticpoleright {
+    position: absolute;
+    top: 115px;
+    left:395px;
+    z-index: 50;
+}
+
+#backgroundperson1 {
+    position: absolute;
+    top: 500px;
+    left: 10px;
+    z-index: 50;
+}
+
+#backgroundperson2 {
+    position: absolute;
+    top: 525px;
+    left: 70px;
+    z-index: 50;
+}
+
+#backgroundperson3 {
+    position: absolute;
+    top: 30px;
+    left: 700px;
+    z-index: 50;
+}
+
+#backgroundperson4 {
+    position: absolute;
+    top: 10px;
+    left: 635px;
+    z-index: 50;
+}
+
+#backgroundperson5 {
+    position: absolute;
+    left: 80px;
+    top: 70px;
+}
+
+#backgroundperson6 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
